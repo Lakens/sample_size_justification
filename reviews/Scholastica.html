@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-proximanova1-n4-active wf-proximanova1-i7-active wf-proximanova1-n7-active wf-proximanova1-i4-active wf-ffmetaserifwebpro1-i5-active wf-ffmetaserifwebpro1-i7-active wf-ffmetaserifwebpro1-n7-active wf-ffmetaserifwebpro1-n5-active wf-museoslab1-n3-active wf-museoslab1-i3-active wf-museoslab1-n7-active wf-museoslab1-i7-active wf-active" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<script type="text/javascript" src="Scholastica_files/main.js"></script><script type="text/javascript" src="Scholastica_files/vendor.js"></script><script type="text/javascript" async="" src="Scholastica_files/a"></script><script src="Scholastica_files/nr-1211.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"6d90aa076b","applicationID":"183908","transactionName":"egxfRhNaDlpdEBxbQGYCQUINXAFXTAtcXxxdBlJbElwNWGcQVlBX","queueTime":2,"applicationTime":13,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"6d90aa076b",applicationID:"183908"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1211.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script><meta content="width=device-width, initial-scale=1" name="viewport"><title>Scholastica</title><!-- base href="https://app.scholasticahq.com/" --><link rel="shortcut icon" type="image/x-icon" href="https://assets.scholasticahq.com/assets/favicon-271a7f09410582abb8af59459e936b9788b3737bc47d62e4d2b29b31e847a18a.ico"><script src="Scholastica_files/browser_redirect.js"></script><script src="Scholastica_files/polyfill.js" type="text/javascript"></script><link rel="stylesheet" media="screen" href="Scholastica_files/font_icons-109b6dd60a8e45f00c1755dcb43db79e3244a0feba9fd359c.css"><link rel="stylesheet" media="screen" href="Scholastica_files/js_application_legacy-6d9918f6cca1a8a5878bb53a2e9339dc6de890.css"><script async="" src="Scholastica_files/MathJax.js"></script><meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="nHI8wUvSCPzO/5e2GQOpptI7+UiT6cy1S0ifWr5QLYCQgwXcUYCN8PXwQqTSgk2jnh/9KyfY8VRAzTgp6YE8/Q=="><script src="Scholastica_files/hfc1xzq.js"></script><style type="text/css">.tk-proxima-nova{font-family:"proxima-nova-1","proxima-nova-2",sans-serif;}.tk-ff-meta-serif-web-pro{font-family:"ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",serif;}.tk-museo-slab{font-family:"museo-slab-1","museo-slab-2",serif;}</style><style type="text/css">@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/71f83c/00000000000000003b9b093b/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/86b539/00000000000000003b9b093a/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/4838bd/00000000000000003b9b0934/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/6aec08/00000000000000003b9b0935/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:ff-meta-serif-web-pro-1;src:url(https://use.typekit.net/af/608768/00000000000000003b9b06f3/27/l?subset_id=2&fvd=i5&v=3) format("woff2"),url(https://use.typekit.net/af/608768/00000000000000003b9b06f3/27/d?subset_id=2&fvd=i5&v=3) format("woff"),url(https://use.typekit.net/af/608768/00000000000000003b9b06f3/27/a?subset_id=2&fvd=i5&v=3) format("opentype");font-weight:500;font-style:italic;font-display:auto;}@font-face{font-family:ff-meta-serif-web-pro-1;src:url(https://use.typekit.net/af/59164f/00000000000000003b9b06f6/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/59164f/00000000000000003b9b06f6/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/59164f/00000000000000003b9b06f6/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:ff-meta-serif-web-pro-1;src:url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/6da54c/00000000000000003b9b06f7/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:ff-meta-serif-web-pro-1;src:url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/8e6183/00000000000000003b9b06f2/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:museo-slab-1;src:url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/53dec0/0000000000000000000100fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:museo-slab-1;src:url(https://use.typekit.net/af/ea0e14/000000000000000000010141/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/ea0e14/000000000000000000010141/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/ea0e14/000000000000000000010141/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:museo-slab-1;src:url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:museo-slab-1;src:url(https://use.typekit.net/af/696cdf/00000000000000000000ec0a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/696cdf/00000000000000000000ec0a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/696cdf/00000000000000000000ec0a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}</style><script type="text/javascript">try{Typekit.load();}catch(e){}</script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style>main {
+   }
+  main .top-nav {
+    height: 30px;
+    background-color: #222;
+    padding-top: 3px;
+    margin-bottom: 50px; }
+    main .top-nav a {
+      font-size: 13px;
+      color: white;
+      transition: 0.25s all ease; }
+      main .top-nav a:hover {
+        color: rgba(255, 255, 255, 0.5); }
+  main #decision-comments,
+  main #reviews .open-response {
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  main .article-title {
+    font-size: 17px; }
+  main .jump-to-section {
+    background: #3498db !important;
+    padding: 15px;
+    color: #fff !important;
+    font-weight: bold !important;
+    text-align: center !important; }
+  main button.outline-button,
+  main .button.outline-button {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 12px; }
+    main button.outline-button:active, main button.outline-button:focus,
+    main .button.outline-button:active,
+    main .button.outline-button:focus {
+      top: 0;
+      border-bottom: 1px solid #fff !important; }
+    main button.outline-button:disabled,
+    main .button.outline-button:disabled {
+      cursor: not-allowed;
+      background-color: #d35400;
+      opacity: 0.25;
+      transition: opacity 0.25s ease-in-out; }
+  main ul#jump-nav {
+    margin-left: 0px; }
+    main ul#jump-nav li {
+      list-style: none;
+      margin-bottom: 10px; }
+      main ul#jump-nav li i {
+        margin-right: 5px; }
+      main ul#jump-nav li:nth-of-type(1) i {
+        color: #1abc9c; }
+      main ul#jump-nav li:nth-of-type(2) i {
+        color: #2ecc71; }
+      main ul#jump-nav li:nth-of-type(3) i {
+        color: #3498db; }
+      main ul#jump-nav li:nth-of-type(4) i {
+        color: #9b59b6; }
+      main ul#jump-nav li:nth-of-type(5) i {
+        color: #34495e; }
+      main ul#jump-nav li:nth-of-type(6) i {
+        color: #f1c40f; }
+      main ul#jump-nav li:nth-of-type(7) i {
+        color: #e67e22; }
+      main ul#jump-nav li:nth-of-type(8) i {
+        color: #e74c3c; }
+      main ul#jump-nav li a {
+        font-size: 13px !important;
+        color: rgba(0, 0, 0, 0.7) !important; }
+  main .link.next-to-button.loading {
+    pointer-events: none;
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out; }
+  main .panel.callout {
+    background-color: #d35400;
+    border: 1px solid #a04000;
+    margin-bottom: 50px; }
+    main .panel.callout h3 {
+      color: #fff;
+      font-size: 20px; }
+    main .panel.callout > p > a {
+      text-decoration: underline; }
+    main .panel.callout p,
+    main .panel.callout a {
+      color: #fff !important; }
+    main .panel.callout a.link {
+      text-decoration: underline; }
+      main .panel.callout a.link.next-to-button {
+        font-size: 12px;
+        margin-left: 7px; }
+  main table.attachments-table {
+    width: 100%; }
+    main table.attachments-table caption {
+      padding: 10px;
+      background: #34495e;
+      color: #fff;
+      text-align: center; }
+    main table.attachments-table tr i {
+      font-size: 40px;
+      color: #565656;
+      text-align: center !important; }
+    main table.attachments-table tr td {
+      padding: 20px;
+      text-align: left !important; }
+  main h3.question-header {
+    background: #34495e;
+    font-size: 14px;
+    padding: 25px;
+    color: #fff !important;
+    font-weight: normal;
+    margin-bottom: 17px; }
+  main .decision-date {
+    color: rgba(0, 0, 0, 0.5); }
+  main .notification.publication_information .note-text {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px; }
+  main .notification.publication_information.revise-and-resubmit span {
+    border-bottom-color: #d35400 !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  main .notification.publication_information.pending-publication-offer span {
+    border-bottom-color: #55ae3a !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  main .notification.publication_information.accepted span {
+    border-bottom-color: #55ae3a !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  main .notification.publication_information.rejected span {
+    border-bottom-color: #e74c3c !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  main .notification.publication_information.reject span {
+    border-bottom-color: #e74c3c !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  main #decision-title span {
+    font-style: italic; }
+  main table {
+    border-collapse: collapse; }
+    main table th {
+      font-size: 12px;
+      font-weight: lighter;
+      padding: 10px;
+      background: #333;
+      color: #fff; }
+    main table tr td:not(:first-of-type) {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: none;
+      text-align: center; }
+    main table tr td:first-of-type {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: none;
+      border-top: none;
+      font-size: 12px; }
+  main td {
+    color: green; }
+  main td:first-child {
+    color: #333;
+    max-width: 280px; }
+  @media only screen and (max-width: 40em) {
+    main .section-title {
+      font-weight: lighter !important;
+      font-size: 15px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center !important;
+      margin-bottom: 25px !important; }
+    main .decision-content .panel scholastica-markdown p,
+    main .decision-content .panel scholastica-markdown li {
+      color: #333 !important;
+      font-size: 15px; }
+    main .decision-content .panel scholastica-markdown li {
+      margin-bottom: 10px; }
+    main .table-wrapper {
+      width: 90% !important;
+      overflow-x: scroll;
+      margin-bottom: 25px; }
+      main .table-wrapper table tr:nth-of-type(even) {
+        background: transparent; }
+      main .table-wrapper table.attachments-table i {
+        background-color: transparent !important;
+        color: #2980b9 !important;
+        font-size: 25px !important; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    main .section-title {
+      font-weight: lighter !important;
+      font-size: 15px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center !important;
+      margin-bottom: 25px !important; }
+    main .decision-content .panel {
+      padding: 20px 20px; }
+      main .decision-content .panel scholastica-markdown p,
+      main .decision-content .panel scholastica-markdown li {
+        color: #333 !important;
+        font-size: 17px; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape) {
+    main .decision-content .panel {
+      padding: 50px 50px; }
+      main .decision-content .panel scholastica-markdown p,
+      main .decision-content .panel scholastica-markdown li {
+        color: #333 !important;
+        font-size: 17px; }
+      main .decision-content .panel table {
+        width: 100%; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
+    main .table-wrapper {
+      overflow-x: scroll; }
+      main .table-wrapper table.attachments-table td:nth-of-type(odd) {
+        display: none; } }
+  @media only screen and (min-width: 64.063em) {
+    main .section-title {
+      font-weight: lighter !important;
+      font-size: 15px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center !important;
+      margin-bottom: 25px !important; }
+    main .decision-content .panel {
+      padding: 40px 60px; }
+      main .decision-content .panel scholastica-markdown p,
+      main .decision-content .panel scholastica-markdown li {
+        color: #333 !important;
+        font-size: 17px; }
+    main .panel.navigation-panel {
+      padding: 15px !important; } }
+  @media print {
+    main body {
+      width: 650px;
+      margin: 0 auto; }
+      main body .top-nav {
+        display: none !important; }
+      main body div[stick] {
+        display: none !important; }
+      main body .panel.callout {
+        padding: 25px;
+        border: 1px dotted #000; }
+        main body .panel.callout > * {
+          color: #000 !important; }
+        main body .panel.callout a {
+          color: #000 !important;
+          text-decoration: underline !important; }
+        main body .panel.callout button.outline-button,
+        main body .panel.callout .button.outline-button,
+        main body .panel.callout .button {
+          color: black;
+          text-decoration: underline;
+          margin: 0;
+          padding: 0; }
+        main body .panel.callout h3 {
+          font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+        main body .panel.callout p {
+          font-family: 'proxima-nova-1', 'proxima-nova-2', 'Helvetica Neue'; }
+      main body h4#decision-title {
+        font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2';
+        text-align: center;
+        font-size: 20px; }
+      main body p.article-title {
+        font-family: 'proxima-nova-1', 'proxima-nova-2', 'Helvetica Neue';
+        text-align: center; }
+      main body .decision-date {
+        font-family: 'proxima-nova-1', 'proxima-nova-2', 'Helvetica Neue';
+        font-size: 14px;
+        text-align: center;
+        color: #000; }
+      main body .decision-meta {
+        border-top: 3px solid #000;
+        border-bottom: 3px solid #000;
+        margin-bottom: 50px; }
+      main body .review-questions.panel .section-title {
+        font-weight: lighter !important;
+        font-size: 15px !important;
+        color: rgba(0, 0, 0, 0.6) !important;
+        text-align: center !important;
+        margin-bottom: 25px !important; }
+      main body .panel table {
+        border: 1px solid black !important; }
+        main body .panel table caption {
+          font-family: 'proxima-nova-1', 'proxima-nova-2', 'Helvetica Neue';
+          color: black !important; }
+        main body .panel table thead th {
+          border: 1px solid black !important;
+          color: black !important; }
+        main body .panel table tbody td {
+          padding: 15px;
+          font-family: 'proxima-nova-1', 'proxima-nova-2', 'Helvetica Neue';
+          border: 1px solid black !important; }
+          main body .panel table tbody td .fi-check {
+            color: black !important; }
+        main body .panel table.attachments-table td:nth-of-type(odd) {
+          display: none; }
+      main body .panel .notification.publication_information .note-text {
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 10px; }
+      main body .panel .notification.publication_information.revise-and-resubmit span {
+        border-bottom-color: transparent !important;
+        border-bottom-width: 4px !important;
+        border-bottom-style: solid !important;
+        font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+      main body .panel .notification.publication_information.pending-publication-offer span {
+        border-bottom-color: transparent !important;
+        border-bottom-width: 4px !important;
+        border-bottom-style: solid !important;
+        font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+      main body .panel .notification.publication_information.accepted span {
+        border-bottom-color: transparent !important;
+        border-bottom-width: 4px !important;
+        border-bottom-style: solid !important;
+        font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+      main body .panel .notification.publication_information.rejected span {
+        border-bottom-color: transparent !important;
+        border-bottom-width: 4px !important;
+        border-bottom-style: solid !important;
+        font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; } }
+  main div.overlay.active {
+    padding-top: 0px; }
+  main div > div > h2 > div.takeover-title {
+    color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #437dae; }
+  main table tr td.file-type.editor-attachments {
+    text-align: center !important; }
+</style><style>scholastica-markdown .attachment.table table tr.alt,scholastica-markdown .attachment.table table tr.even,scholastica-markdown .attachment.table table tr:nth-of-type(even){background:inherit}scholastica-markdown .attachment.table table th,scholastica-markdown .attachment.table table thead{background:0 0}scholastica-markdown .attachment.table table,scholastica-markdown .attachment.table table td,scholastica-markdown .attachment.table table th{border-collapse:collapse}scholastica-markdown .MathJax_Preview{color:inherit}span.smallcaps{font-variant:small-caps}scholastica-markdown a{word-break:break-word}.footnote-backref{display:none}pre>code{display:block;overflow-x:scroll}</style><style>.info-text[_ngcontent-oog-c4] {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.journal-items[_ngcontent-oog-c4] {
+  color: black; }
+
+.loading[_ngcontent-oog-c4] {
+  display: block;
+  margin: 25px auto;
+  text-align: center; }
+
+p#journal-text[_ngcontent-oog-c4] {
+  color: #7f8c8d;
+  font-size: 22px; }
+
+button[_ngcontent-oog-c4]:first-of-type {
+  margin-top: 20px; }
+
+button.big.button.green[_ngcontent-oog-c4] {
+  height: 50px;
+  margin: 0 auto;
+  display: block; }
+
+div#actions[_ngcontent-oog-c4] {
+  text-align: center; }
+
+hr[_ngcontent-oog-c4] {
+  border-width: 2px 0 0;
+  color: #353b48; }
+
+ul[_ngcontent-oog-c4]    > li[_ngcontent-oog-c4] {
+  list-style: none; }</style><style>takeover .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 100;
+  display: none;
+  overflow-y: scroll; }
+  takeover .overlay.active {
+    display: block; }
+  takeover .overlay i.fi-x-circle {
+    position: absolute;
+    font-size: 2.5em;
+    top: 14px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    color: #333; }
+  takeover .overlay .takeover-title {
+    margin-top: 3em; }
+  takeover .overlay .takeover-content {
+    overflow: scroll;
+    height: 100%; }
+</style><style>@charset "UTF-8";.reveal-modal{padding:0}.reveal-modal .ellipsis-loading:after{overflow:hidden;display:inline-block;vertical-align:bottom;-webkit-animation:.9s steps(4,end) infinite ellipsis;animation:.9s steps(4,end) infinite ellipsis;content:"…";width:0;font-size:2em;line-height:initial}@-webkit-keyframes ellipsis{to{width:1.25em}}@keyframes ellipsis{to{width:1.25em}}.reveal-modal .close-reveal-modal{top:0}.reveal-modal .modal-content-wrap{padding:25px}.reveal-modal .modal-content-wrap h2{color:#6c6c6c;font-size:20px;font-weight:400;border-bottom:1px dotted rgba(0,0,0,.3);margin-bottom:15px;margin-top:0}.reveal-modal .modal-content-wrap .image-disclaimer{font-size:11px;margin-top:7px;margin-bottom:0}.reveal-modal .cancel-action,.reveal-modal .confirm-action{padding:0;height:38px}.reveal-modal .cancel-action:hover,.reveal-modal .confirm-action:hover{cursor:pointer}.reveal-modal .cancel-action a,.reveal-modal .cancel-action button,.reveal-modal .cancel-action span,.reveal-modal .confirm-action a,.reveal-modal .confirm-action button,.reveal-modal .confirm-action span{color:#fff;font-size:13px}.reveal-modal .cancel-action button,.reveal-modal .confirm-action button{background:0 0;border:none;margin:0;padding:9px 20px;vertical-align:6px;width:100%}.reveal-modal .cancel-action a:hover,.reveal-modal .confirm-action a:hover{color:#fff}.reveal-modal .confirm-action{background-color:#1abc9c}.reveal-modal .cancel-action{background-color:#95a5a6}</style><style>@import url("https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css");
+.review-component {
+   }
+  .review-component #scholastica-navigation {
+    display: none !important; }
+  .review-component .top-nav {
+    height: 30px;
+    background-color: #222;
+    padding-top: 3px;
+    margin-bottom: 50px; }
+    .review-component .top-nav a {
+      font-size: 13px;
+      color: white;
+      transition: 0.25s all ease; }
+      .review-component .top-nav a:hover {
+        color: rgba(255, 255, 255, 0.5); }
+  .review-component .decision-reviews ul li,
+  .review-component .templates ul li {
+    list-style-type: none; }
+  .review-component scholastica-markdown p,
+  .review-component scholastica-markdown li {
+    font-size: 16px !important; }
+  .review-component #decision-comments,
+  .review-component #reviews .open-response {
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  .review-component .open-response.review-response {
+    border-bottom: 1px solid #ddd;
+    display: block; }
+  .review-component .article-title {
+    font-size: 17px; }
+  .review-component .review-group {
+    margin-bottom: 15px; }
+  .review-component .review-completed {
+    font-size: 15px;
+    color: #8e8d8d;
+    font-family: 'museo-slab-1', 'museo-slab-2', serif; }
+  .review-component h5.review-section,
+  .review-component h5.major-review-section {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .review-component h5.major-review-section {
+    font-size: 24px;
+    color: #2980b9;
+    font-family: 'museo-slab-1', 'museo-slab-2', serif;
+    padding-bottom: 10px; }
+  .review-component h5.review-section {
+    font-weight: 100;
+    font-size: 17px;
+    padding-bottom: 5px;
+    font-family: 'museo-slab-1', 'museo-slab-2', serif;
+    color: #505a5a !important;
+    font-weight: bold;
+    background: none; }
+  .review-component i.fi-star {
+    font-size: 20px; }
+  .review-component .review-response {
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2';
+    font-size: 18px; }
+  .review-component .review-header {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 17px !important; }
+  .review-component scholastica-markdown pre > code {
+    display: block;
+    overflow-x: scroll; }
+  .review-component .major-review-section + p.disclaimer {
+    margin-top: 0;
+    padding-top: 0; }
+  .review-component button.outline-button,
+  .review-component .button.outline-button {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 12px; }
+    .review-component button.outline-button:active, .review-component button.outline-button:focus,
+    .review-component .button.outline-button:active,
+    .review-component .button.outline-button:focus {
+      top: 0;
+      border-bottom: 1px solid #fff !important; }
+    .review-component button.outline-button:disabled,
+    .review-component .button.outline-button:disabled {
+      cursor: not-allowed;
+      background-color: #d35400;
+      opacity: 0.25;
+      transition: opacity 0.25s ease-in-out; }
+  .review-component .link.next-to-button.loading {
+    pointer-events: none;
+    opacity: 0.25;
+    transition: opacity 0.25s ease-in-out; }
+  .review-component table.attachments-table {
+    width: 100%; }
+    .review-component table.attachments-table tr td {
+      padding: 20px;
+      text-align: left !important; }
+      .review-component table.attachments-table tr td a {
+        display: block; }
+      .review-component table.attachments-table tr td.file-type i {
+        font-size: 40px;
+        color: #565656;
+        text-align: center !important;
+        display: block; }
+  .review-component .section {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-bottom: 30px; }
+  .review-component h3.question-header {
+    background: #2980b9;
+    font-size: 16px;
+    padding: 7px 15px;
+    color: #fff !important;
+    font-weight: normal; }
+  .review-component .visibility {
+    color: #fff;
+    padding: 3px 7px;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 10px;
+    opacity: 0.75;
+    transition: opacity 0.25s ease; }
+    .review-component .visibility.visible-to-editor-only {
+      background: #d35400; }
+    .review-component .visibility.visible-to-author {
+      background: #8e44ad; }
+    .review-component .visibility:hover {
+      opacity: 1; }
+  .review-component table .visibility {
+    font-size: 10px;
+    padding: 1px 7px;
+    margin-top: 9px;
+    margin-bottom: 0; }
+  .review-component .decision-date {
+    color: rgba(0, 0, 0, 0.5); }
+  .review-component .notification.publication_information .note-text {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px; }
+  .review-component .notification.publication_information.revise-and-resubmit span {
+    border-bottom-color: #d35400 !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  .review-component .notification.publication_information.pending-publication-offer span {
+    border-bottom-color: #55ae3a !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  .review-component .notification.publication_information.accepted span {
+    border-bottom-color: #55ae3a !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  .review-component .notification.publication_information.rejected span {
+    border-bottom-color: #e74c3c !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  .review-component .notification.publication_information.reject span {
+    border-bottom-color: #e74c3c !important;
+    border-bottom-width: 4px !important;
+    border-bottom-style: solid !important;
+    font-family: 'ff-meta-serif-web-pro-1', 'ff-meta-serif-web-pro-2'; }
+  .review-component #decision-title span {
+    font-style: italic; }
+  .review-component table {
+    border-collapse: collapse; }
+    .review-component table th {
+      font-size: 12px;
+      font-weight: lighter;
+      padding: 10px;
+      background: #333;
+      color: #fff; }
+    .review-component table tr td:not(:first-of-type) {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: none;
+      text-align: center; }
+    .review-component table tr td:first-of-type {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: none;
+      border-top: none;
+      font-size: 12px; }
+  .review-component td {
+    color: green; }
+  .review-component td:first-child {
+    color: #333;
+    max-width: 280px; }
+  @media not all and (max-width: 40em) {
+    .review-component .sticky {
+      position: sticky;
+      top: 10px; } }
+  .review-component scholastica-markdown img {
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd; }
+  .review-component scholastica-markdown pre > code {
+    font-size: 14px;
+    margin-bottom: 25px; }
+  .review-component scholastica-markdown h1 {
+    font-size: 30px; }
+  .review-component scholastica-markdown h2,
+  .review-component scholastica-markdown h3,
+  .review-component scholastica-markdown h4,
+  .review-component scholastica-markdown h5,
+  .review-component scholastica-markdown h6 {
+    font-size: 25px; }
+  @media only screen and (max-width: 40em) {
+    .review-component .section-title {
+      font-weight: lighter !important;
+      font-size: 15px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center !important;
+      margin-bottom: 25px !important; }
+    .review-component p.disclaimer em {
+      margin-bottom: 5px !important; }
+    .review-component .decision-content .panel scholastica-markdown p,
+    .review-component .decision-content .panel scholastica-markdown li {
+      color: #333 !important;
+      font-size: 15px;
+      padding-bottom: 15px; }
+    .review-component .decision-content .panel scholastica-markdown li {
+      margin-bottom: 10px; }
+    .review-component .table-wrapper {
+      overflow-x: scroll;
+      margin-bottom: 25px;
+      width: 90% !important; }
+      .review-component .table-wrapper table tr:nth-of-type(even) {
+        background: transparent; }
+      .review-component .table-wrapper table.attachments-table i {
+        background-color: transparent !important;
+        color: #2980b9 !important;
+        font-size: 25px !important; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .review-component .section-title {
+      font-weight: lighter !important;
+      font-size: 15px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center !important;
+      margin-bottom: 25px !important; }
+    .review-component .decision-content .panel {
+      padding: 20px 20px; }
+      .review-component .decision-content .panel scholastica-markdown p,
+      .review-component .decision-content .panel scholastica-markdown li {
+        color: #333 !important;
+        font-size: 18px;
+        padding-bottom: 15px; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: landscape) {
+    .review-component .decision-content .panel {
+      padding: 50px 50px; }
+      .review-component .decision-content .panel scholastica-markdown p,
+      .review-component .decision-content .panel scholastica-markdown li {
+        color: #333 !important;
+        font-size: 18px;
+        padding-bottom: 15px; }
+      .review-component .decision-content .panel table {
+        width: 100%; } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) and (orientation: portrait) {
+    .review-component .table-wrapper {
+      overflow-x: scroll; }
+      .review-component .table-wrapper table.attachments-table td:nth-of-type(odd) {
+        display: none; } }
+  @media only screen and (min-width: 64.063em) {
+    .review-component .section-title {
+      font-weight: lighter !important;
+      font-size: 15px !important;
+      color: rgba(0, 0, 0, 0.6) !important;
+      text-align: center !important;
+      margin-bottom: 25px !important; }
+    .review-component .decision-content .panel {
+      padding: 40px 42px; }
+      .review-component .decision-content .panel scholastica-markdown p,
+      .review-component .decision-content .panel scholastica-markdown li {
+        color: #333 !important;
+        font-size: 18px;
+        padding-bottom: 15px; }
+    .review-component .panel.navigation-panel {
+      padding: 15px !important; } }
+  @media print {
+    .review-component { }
+      .review-component body {
+        width: 500px;
+        margin: 0 auto; }
+        .review-component body .sticky {
+          display: block !important; }
+        .review-component body #scholastica-navigation {
+          display: none !important; }
+        .review-component body .help-widget {
+          display: none !important; }
+        .review-component body .top-nav {
+          display: none !important; }
+      .review-component scholastica-markdown img {
+        display: inline !important;
+        max-height: 300px !important; }
+      .review-component h5.major-review-section {
+        color: #000; }
+      .review-component h3.question-header {
+        background: transparent;
+        color: #000 !important;
+        border: 4px double #d2d1d1; }
+      .review-component .visibility {
+        background-color: transparent !important; }
+      .review-component .visible-to-author {
+        background: none;
+        color: #000; }
+      .review-component .visible-to-editor-only {
+        color: #000; }
+      .review-component .rating-scale-questions table th,
+      .review-component .rating-scale-questions table td,
+      .review-component table.attachments-table th,
+      .review-component table.attachments-table td {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.3); }
+      .review-component .rating-scale-questions table tbody td,
+      .review-component table.attachments-table tbody td {
+        padding: 10px; }
+        .review-component .rating-scale-questions table tbody td.file-type,
+        .review-component table.attachments-table tbody td.file-type {
+          display: none; }
+        .review-component .rating-scale-questions table tbody td:first-of-type,
+        .review-component table.attachments-table tbody td:first-of-type {
+          border: 1px solid rgba(0, 0, 0, 0.3) !important; }
+        .review-component .rating-scale-questions table tbody td:not(:first-of-type),
+        .review-component table.attachments-table tbody td:not(:first-of-type) {
+          border: 1px solid rgba(0, 0, 0, 0.3) !important; } }
+  .review-component div.overlay.active {
+    padding-top: 0px; }
+  .review-component div > div > h2 > div.takeover-title {
+    color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #437dae; }
+  .review-component .review-create-page-open-response-question-title {
+    margin-top: 20px;
+    border-top: 1px dotted #ddd;
+    padding-top: 14px;
+    padding-bottom: 0 !important; }
+    .review-component .review-create-page-open-response-question-title + app-review-visibility-label {
+      margin-bottom: 10px;
+      display: block; }
+</style><style hs-beacon="active" data-styled-version="5.1.1"></style></head><body data-flash="{}" ng-class="bodyClass"><div id="MathJax_Message" style="display: none;"></div><div id="mount-sidewide-notification"></div><header class="global"></header><script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    $('#flash-modal').foundation('reveal', 'open');
+  });
+</script>
+<app ng-version="8.0.0">
+    <router-outlet></router-outlet><main><div class="top-nav">
+  <div class="row">
+    <div class="medium-3 small-6 columns text-left">
+      <a target="_self" href="https://app.scholasticahq.com/journals/collabra/manuscripts/1283258-sample-size-justification">
+        <i class="fi-arrow-left"></i> Go back to manuscript
+      </a>
+    </div>
+    <div class="small-6 medium-3 columns medium-offset-6 text-right">
+      <a onclick="window.print()"> <i class="fi-print"></i> Print decision </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 large-offset-2 small-12 columns">
+    <unpublished-decision-alert>
+    <!---->
+  </unpublished-decision-alert>
+
+    <notifications><div class="animated fadeIn">
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <!----><div class="panel callout">
+    <!----><!---->
+      <h3>Revise and Resubmit</h3>
+      <p>
+        The journal has requested that this manuscript be revised and
+        resubmitted.
+      </p>
+      <a class="outline-button button" target="_self" href="https://app.scholasticahq.com/submissions/collabra/new?previous_version_id=1283258&amp;proxy_submission=false">
+        Submit a revised manuscript
+      </a>
+    
+    <!---->
+    <!---->
+  </div>
+
+  <!---->
+
+  <!---->
+
+  <span style="display: none">view: author-revise_and_resubmit</span>
+</div>
+
+<withdraw-prompt _nghost-oog-c4=""><takeover _ngcontent-oog-c4="" id="withdrawalTakeover">
+    <div class="overlay" tabindex="0" id="takeover-4037">
+      <div>
+        <i class="fi-x-circle"></i>
+        <div>
+          <h2>
+            <div _ngcontent-oog-c4="" class="takeover-title">
+    Congrats! You've <strong _ngcontent-oog-c4="">accepted</strong> this
+    <strong _ngcontent-oog-c4="">publication offer</strong> from
+    <strong _ngcontent-oog-c4="">Collabra: Psychology</strong>, now please
+    <strong _ngcontent-oog-c4="">withdraw your manuscript from</strong> the
+    <strong _ngcontent-oog-c4="">other law reviews</strong> where it's still being considered
+  </div>
+          </h2>
+          <div _ngcontent-oog-c4="" class="takeover-content">
+    <div _ngcontent-oog-c4="" class="loading">
+      <!---->
+    </div>
+
+    <!---->
+  </div>
+        </div>
+      </div>
+    </div>
+  </takeover>
+</withdraw-prompt>
+</notifications>
+
+    <div class="decision-meta">
+      <h4 class="text-center" id="decision-title">
+        Publication Decision from <span>Collabra: Psychology</span>
+      </h4>
+      <div class="row">
+        <div class="large-10 columns large-centered">
+          <p class="text-center article-title">"Sample Size Justification"</p>
+          <p class="text-center decision-date">
+            <decision-date><div>
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  <!---->
+  <!----><div>
+    <span>Decision made on</span>
+    May 17th, 2021
+
+    <!---->
+  </div>
+</div>
+
+<modal>
+    <div aria-hidden="true" class="reveal-modal small" data-reveal="" role="dialog" id="modal-7440" data-options="close_on_background_click:false;close_on_esc:false;">
+        <div class="modal-content-wrap">
+          <div>
+            <h2>
+              <div class="modal-title">
+    Are you sure you want to re-send this decision to the author?
+  </div>
+            </h2>
+          </div>
+          <div class="modal-content">
+    <p>
+      The original decision letter will be re-sent to the author at
+      <span class="resend-email">d.lakens@tue.nl</span>.<br>
+      No changes to the letter may be made.
+    </p>
+  </div>
+          <!---->
+        </div>
+
+        <!----><div class="actions">
+          <div class="row">
+            <!---->
+          <div class="small-6 columns confirm-action text-center collapse">
+            <!---->
+          <div>
+            <!----><button class="modal-confirm">
+    Re-send
+  </button><!---->
+            <!---->
+          </div>
+        
+          </div>
+          <div class="small-6 columns cancel-action text-center collapse">
+            <!---->
+          <div aria-label="Close">
+            <button class="modal-cancel">
+    cancel
+  </button>
+          </div>
+        
+          </div>
+        
+          </div>
+        </div>
+
+
+        <!---->
+
+        <!---->
+
+
+        <!---->
+
+        <!---->
+
+    </div>
+  </modal>
+</decision-date>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-8 large-offset-2 large-uncentered medium-10 medium-centered columns decision-content">
+    <decision id="determination"><div>
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <!----><div class="panel">
+    <h3 class="section-title">Editorial board's determination</h3>
+    <div class="notification publication_information revise-and-resubmit text-center">
+      <span>Revise and resubmit</span>
+    </div>
+  </div>
+
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <!---->
+</div>
+</decision>
+
+    <div class="panel" id="editor-comments">
+      <h3 class="section-title">Comments from the editor</h3>
+      <scholastica-markdown id="decision-comments"><div><p>Dear Daniel Lakens,</p>
+<p>I have now received all reviews of your manuscript, “Sample Size 
+Justification” from qualified researchers. I also independently read the
+ manuscript before consulting these reviews. I agree that your 
+manuscript has important strengths and also that there are some issues 
+that need to be addressed.  I therefore encourage you to submit a 
+revised version for further consideration at Collabra: Psychology.</p>
+<p>The reviewers did an outstanding job in their reviews.  I will 
+highlight issues I think are particularly salient here.  In your 
+resubmission, please include a document with a point-by-point response 
+to both the points I list here and the reviewers’ comments, outlining 
+each change made in your manuscript or providing a suitable rebuttal.</p>
+<p>One of the things you may wish to address in a revision round is the 
+scope of your article. As reviewer #3 states, parts of your article read
+ like an extremely thorough compendium of all the factors that may come 
+into play when justifying one’s sample size, but other parts read more 
+like a set of practical recommendations. Both reviewers #1 and #2 think 
+some worked examples may help and I agree. I am not too worried about 
+the length of the manuscript in a vacuum, but do think the reader might 
+benefit from a bit more focus. One way to do this could be to 
+judiciously cut from the final section “Additional Considerations…” and 
+add one or two concrete worked examples.</p>
+<p>Related to this, you bring up the ‘sticky point’ of heuristics, such 
+as alpha=.05 and 80% power. I completely agree that it is worth 
+stressing that these values are arbitrary, but what should the 
+researcher do that has no clear sense of the smallest effect size of 
+interest or the expected effect size? I think the paper could do with 
+some extra handholding there, perhaps again with some worked examples. 
+Otherwise, I foresee a number of justifications along the lines of “In 
+the absence of clear ideas with respect to the smallest effect size of 
+interest or the expected effect size, we stick to the heuristic of 
+defining our sample size such that we have 80% power (see Lakens).” 
+Although the author is not to be blamed for the reader not doing their 
+homework, perhaps the homework can be made a bit easier for the reader?</p>
+<p>In summary, I think this is a promising manuscript and I hope you 
+will revise it for further consideration at Collabra: Psychology. I look
+ forward to receiving your revision.</p>
+<p>Please ensure that your revised files adhere to our author 
+guidelines, and that the files are fully copyedited/proofed prior to 
+upload. Please also ensure that all copyright permissions have been 
+obtained. This is the last opportunity for major editing, therefore 
+please fully check your file prior to re-submission.</p>
+<p>If you have any questions or difficulties during this process, please contact the editorial office at <a href="mailto:editorialoffice@collabra.org">editorialoffice@collabra.org</a>.</p>
+<p>We hope you can submit your revision within the next six weeks. If 
+you cannot make this deadline, please let us know as early as possible.</p>
+<p>Sincerely,</p>
+<p>Don van Ravenzwaaij</p>
+</div>
+</scholastica-markdown>
+    </div>
+
+    
+    <!---->
+
+    <decision-reviews>
+<!----><div class="decision-content" id="reviews">
+  <!----><div class="review-questions panel" id="reviewer_1">
+    <h1 class="section-title">
+      Reviewer 1
+    </h1>
+    <div class="row">
+      <div class="medium-11 columns medium-centered">
+        <app-review><div class="review-component">
+  <!---->
+
+  
+  <!----><div class="section">
+    <div class="review-header">
+      <h5 class="major-review-section">Open response questions</h5>
+    </div>
+    <!----><div>
+      <div class="review-group">
+        <h3 class="question-header">Please write your review here.  The 
+author(s) will see this review.  Your identity will not be revealed to 
+the authors unless you also include your name (i.e., sign your review) 
+in this box.  It is up to you whether to reveal your identity or not, 
+either is fine.</h3>
+        <!---->
+        <!---->
+        <scholastica-markdown class="open-response review-response"><div><p>I believe this paper is in very good shape. For that reason, I only have limited comments to make.</p>
+<p>My only concerns are around the lack of motivating examples. One or 
+two examples that demonstrate how to engage with various justifications 
+would go the extra step to provide authors with a template they can use 
+for improving their own articles.</p>
+<p>For the section on justifying sample size based on resource 
+constraints, I believe the section would be strengthened by including 
+recommendations to provide sensitivity analyses – e.g. “given our sample
+ size, we had power of .80 to detect effects as small as d = .xx, 90% 
+power to detect effects of d = yy, and 95% power to detect d = zz.”</p>
+<p>Note: I rated everything neutral as these questions do not really apply to this type of article.</p>
+<p>Chris Aberson</p>
+</div>
+</scholastica-markdown>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <!----><div class="section rating-scale-questions">
+    <div class="review-header">
+      <h5 class="major-review-section">Rating scale questions</h5>
+    </div>
+    <!----><div class="table-wrapper">
+      <table>
+        <thead>
+          <th></th>
+          <th>Strongly Disagree</th>
+          <th>Disagree</th>
+          <th>Neutral</th>
+          <th>Agree</th>
+          <th>Strongly Agree</th>
+        </thead>
+        <tbody>
+          <!----><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+construct validity (good measures and/or manipulations of the constructs
+ the authors wish to study). (Choose “Neutral” if this is not an 
+empirical manuscript)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+statistical validity (appropriate statistical tests, assumptions are 
+clear and reasonable, no statistical errors, appropriate statistical 
+inferences, etc.). (Choose “Neutral” if this is not an empirical 
+manuscript)
+</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+internal validity (any causal claims or implications are well-justified,
+ alternative explanations are thoroughly considered, etc.). (Choose 
+“Neutral” if this is not an empirical manuscript, or no causal claims 
+are made or even vaguely implied.)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+external validity (authors appropriately constrain their conclusions 
+based on the limits of the generalizability of their findings to other 
+contexts (including from lab to real world), other populations, other 
+stimuli or measures, etc.)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  
+  <!---->
+  
+</div>
+</app-review>
+      </div>
+    </div>
+  </div><div class="review-questions panel" id="reviewer_2">
+    <h1 class="section-title">
+      Reviewer 2
+    </h1>
+    <div class="row">
+      <div class="medium-11 columns medium-centered">
+        <app-review><div class="review-component">
+  <!---->
+
+  
+  <!----><div class="section">
+    <div class="review-header">
+      <h5 class="major-review-section">Open response questions</h5>
+    </div>
+    <!----><div>
+      <div class="review-group">
+        <h3 class="question-header">Please write your review here.  The 
+author(s) will see this review.  Your identity will not be revealed to 
+the authors unless you also include your name (i.e., sign your review) 
+in this box.  It is up to you whether to reveal your identity or not, 
+either is fine.</h3>
+        <!---->
+        <!---->
+        <scholastica-markdown class="open-response review-response"><div><p>The
+ author describes a number of considerations in justifying the sample 
+size of a study. These considerations pertain to the sample size, the 
+achieved power, the assumed effect size in power analysis, and even the 
+alpha threshold. Some of these considerations are old and worth 
+repeating, and others have previously been relatively neglected. In a 
+way, the manuscript’s greatest strength is also its greatest weakness: a
+ great many issues and considerations are described in detail, but there
+ are so many considerations that the prospect of justifying one’s sample
+ size now seems more daunting, not less.</p>
+<p>Let me first note some features that I appreciated.</p>
+<ul>
+<li>I’m glad to see resource constraints addressed as a justification 
+for the sample size of a study. I would add that there is “opportunity 
+cost” when one spends more time and resources on one study instead of 
+enjoying the opportunity to spend those resources on several studies.</li>
+<li>I appreciate the recommendation to perform an equivalence test instead of providing post-hoc power.</li>
+<li>I think it is neat to see sample size justifications applied to qualitative research.</li>
+</ul>
+<p>Again, the chief weakness of the manuscript is, in my view, that 
+there are a breathtaking number of considerations at play. Several of 
+the considerations have multiple sub-considerations. For example, when 
+considering a priori power analysis, there are three different effect 
+sizes to consider. When considering the last of these effect sizes, 
+there are sub-subconsiderations regarding meta-analytic heterogeneity 
+and publication bias. Although I do not doubt that all these 
+considerations, sub-considerations, and sub-sub-considerations are 
+important, it is hard to imagine how all these issues can be considered 
+together to set a sample size. I would imagine that there is 
+subjectivity, and possibly controversy, in the process by which these 
+considerations are synthesized to perform a power analysis. As it is, it
+ seems pretty overwhelming to try to perform a power analysis given all 
+these considerations, and I can see researchers sticking to their 
+heuristics so that they can set a sample size in 5 minutes instead of 5 
+days.</p>
+<p>Perhaps a worked example or two would be helpful. Examples could 
+demonstrate how the author would recommend exploring and synthesizing 
+these many considerations, and how those considerations might be 
+succinctly reported in a research article. The “21-word solution” 
+(Simmons, Simonsohn, &amp; Nelson) has been successful because it gives 
+authors a succinct template to work from – would it be possible to do 
+something similar for sample size justification? It might also be 
+interesting to see an example of the case described in the last page in 
+which “performing the study anyway is a waste of time and/or money.”</p>
+<p>I would like to suggest an alternative view to the author’s regarding
+ how and why sample sizes are justified. The considerations the author 
+lists in this article are generally statistical, bearing on the Type I 
+and Type II error rates of a study given some resources and SESOI. I 
+would suggest, by comparison, that sample size is less likely to be 
+motivated by concerns regarding error rates than it is a negotiation of 
+sorts between the authors and the journal editor regarding how much 
+sample size is necessary to “earn” a publication. Ideally, most psych 
+research will fall into Table 3, category 1: A future meta-analysis will
+ likely be performed, so why worry about the sample sizes and error 
+rates of individual studies? Publication decisions are gradually coming 
+to rely less on the statistical significance of a p value, instead 
+considering the methods of studies. In this light, justifications like 
+“this previous study used this sample size” make sense, as these 
+justifications are not about frequentist error rates, but about a sense 
+of fairness in editors’ expectations regarding publishable sample sizes.</p>
+<p>Performing a compromise power analysis on the basis of a point 
+estimate of the population effect size feels uncomfortable to me because
+ of the considerable sensitivity to the very precisely specified point 
+estimate. It may be sensible when the sample size is very large or when 
+there is a clear SESOI, but basing these calculations off an expected 
+effect size seems awkward given the likely considerable uncertainty 
+around that expected effect size. Maybe it is just that I cannot imagine
+ a scenario in my discipline where a decision must be reached based on 
+limited evidence, as social psychology has very little power to make 
+urgent or impactful decisions.</p>
+<p>Small details:<br>
+It would probably be helpful to comment the code snippet on page 8 to 
+help the reader understand the code. (e.g., line 1 “make an object for 
+storing p values”, “Collect 20 samples with mean of 0.5 and sd of 1”, 
+“store the p value”, “count up how many p values are &lt; .05”</p>
+<p>p15 “imagine if there is be”</p>
+</div>
+</scholastica-markdown>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <!----><div class="section rating-scale-questions">
+    <div class="review-header">
+      <h5 class="major-review-section">Rating scale questions</h5>
+    </div>
+    <!----><div class="table-wrapper">
+      <table>
+        <thead>
+          <th></th>
+          <th>Strongly Disagree</th>
+          <th>Disagree</th>
+          <th>Neutral</th>
+          <th>Agree</th>
+          <th>Strongly Agree</th>
+        </thead>
+        <tbody>
+          <!----><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+construct validity (good measures and/or manipulations of the constructs
+ the authors wish to study). (Choose “Neutral” if this is not an 
+empirical manuscript)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+statistical validity (appropriate statistical tests, assumptions are 
+clear and reasonable, no statistical errors, appropriate statistical 
+inferences, etc.). (Choose “Neutral” if this is not an empirical 
+manuscript)
+</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+internal validity (any causal claims or implications are well-justified,
+ alternative explanations are thoroughly considered, etc.). (Choose 
+“Neutral” if this is not an empirical manuscript, or no causal claims 
+are made or even vaguely implied.)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+external validity (authors appropriately constrain their conclusions 
+based on the limits of the generalizability of their findings to other 
+contexts (including from lab to real world), other populations, other 
+stimuli or measures, etc.)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  
+  <!---->
+  
+</div>
+</app-review>
+      </div>
+    </div>
+  </div><div class="review-questions panel" id="reviewer_3">
+    <h1 class="section-title">
+      Reviewer 3
+    </h1>
+    <div class="row">
+      <div class="medium-11 columns medium-centered">
+        <app-review><div class="review-component">
+  <!---->
+
+  
+  <!----><div class="section">
+    <div class="review-header">
+      <h5 class="major-review-section">Open response questions</h5>
+    </div>
+    <!----><div>
+      <div class="review-group">
+        <h3 class="question-header">Please write your review here.  The 
+author(s) will see this review.  Your identity will not be revealed to 
+the authors unless you also include your name (i.e., sign your review) 
+in this box.  It is up to you whether to reveal your identity or not, 
+either is fine.</h3>
+        <!---->
+        <!---->
+        <scholastica-markdown class="open-response review-response"><div><p>The
+ manuscript under review addresses a fundamental issue in empirical 
+research: how to determine and justify the number of collected data 
+points. It provides an extensive overview of possible approaches to 
+justify one’s sample size, in connection with an equally thorough review
+ of approaches to justify one’s effect size of interest.<br>
+I very much enjoyed reading this well-written and informative 
+manuscript. Although the issue itself and the approaches discussed are 
+not new, this paper will make a valuable contribution to the field of 
+psychology, no doubt. Sample size justification is a pivotal component 
+of transparent science but it is a tough challenge in practice. The 
+manuscript may offer guidance to researchers who are facing the 
+challenge, thus supporting open and transparent research. This practical
+ impact is the manuscript’s greatest strength, in my opinion, and it is 
+one that will make it an often-read and often-cited paper. Therefore, I 
+think that Collabra: Psychology as the official journal of SIPS is a 
+great outlet for this paper. Nevertheless, I want to outline some 
+concerns that I have about the manuscript in its current form, and some 
+suggestions for improvement.</p>
+<ol>
+<li>
+<p>I think that the manuscript is too long. For the most part, the paper
+ has a tutorial-like character with many practical recommendations 
+(e.g., software packages). This focus on practical applications is a 
+strength of this manuscript and makes it particularly relevant for 
+psychological researchers. At times, however, it reads more like a 
+theoretical review (and the author himself refers to it as such) where 
+the focus is less on applicability but on exhaustiveness. This is 
+certainly informative and it’s in the very nature of justification that 
+it cannot (nor should it) be reduced to a simple set of steps like a 
+recipe. Nevertheless, I think that the practical relevance of the paper 
+would greatly benefit from shortening and streamlining the manuscript by
+ removing unnecessary digressions. For example, the focus is clearly on 
+quantitative research, so I wonder if an entire subsection on 
+qualitative research adds to the value of the paper. Another example is 
+p. 10: The author gives several examples for overly simplistic 
+heuristics, where I feel that one example would suffice to make the 
+point.</p>
+</li>
+<li>
+<p>The author states that all six justification approaches are valid in 
+the sense that they give others insight into the reasons that underlie a
+ chosen sample size (p. 2). I am not sure that this is a helpful 
+definition of validity because it’s hard to think of a way to choose a 
+sample size which is not valid in this sense. It is important to note 
+that the relationship between the inferential goal and the choice of a 
+sample size differs between the justification approaches. For example, 
+when following a heuristic, the choice might be independent of the 
+inferential goal at hand, whereas in an a-priori power analysis, the 
+sample size follows from the inferential goal. The value of information,
+ however, depends only on the inferential goal and the final sample size
+ (p. 2). Thus, when others evaluate it, it should be independent of the 
+underlying justification. On p. 10, the author writes, “peer reviewers 
+and editors should be extremely skeptical of rules of thumb sample size 
+justifications” – why? If the sample size provides for an informative 
+study given the inferential goal at hand, it doesn’t matter how the 
+sample size was chosen. The justification is much more important from 
+the perspective of those who plan the study and collect the samples 
+because it allows for a realistic evaluation of the informativeness of 
+the study. Thus, someone who plans a study should be skeptical of 
+heuristics because it might actually result in an uninformative study 
+for their inferential goal. The heuristics justification might lead to 
+an unreasonable choice of a sample size even if the inferential goal is 
+well-specified – and in that sense, I would argue, the approaches are 
+not all valid. I think that the author implicitly differentiates between
+ “valid” and “invalid” justifications in this sense, and it is a sense 
+which deserves some discussion.</p>
+</li>
+<li>
+<p>The author introduces the value of information as a central concept 
+to justify the sample size (p. 3).  I agree that this is a highly 
+relevant concept: A sample size justification must weigh the costs of 
+data collection (which can also be costs on the side of the 
+participants) against the increase in utility. I don’t find the example 
+with multiple inferential goals displayed in Figure 1 particularly 
+helpful, however. The author argues that in such a case the value of 
+information can be a non-monotonic function. I would go even further and
+ claim that it is a non-monotonic function in most cases. In fact, the 
+function displayed in Figure 1 only makes sense if we assume a 
+non-monotonic function for each single goal. Therefore, I don’t think 
+the example with multiple inferential goals is necessary, one could 
+demonstrate the same concept with a simpler example. Also, why is the 
+function overall increasing? Is this based on the assumption that the 
+decrease of the function for one inferential goal is slower than the 
+increase of the function for another goal? Or do the inferential goals 
+differ in utility?</p>
+</li>
+<li>
+<p>I was confused by the author’s usage of the term “post-hoc power 
+analysis” (p. 21). The author uses the term to refer to the analysis of 
+“observed” power which, as the author clearly points out, is not at all 
+useful. However, I think this is based on an unfortunate 
+misunderstanding of the term as it was introduced by Cohen (e.g., 1988).
+ Like a-priori analysis, post-hoc analysis is based on a theoretical 
+assumption about the population effect size (or smallest effect size of 
+interest). It answers the question: Given the sample size, what’s the 
+chance to detect a certain, theoretically meaningful effect (i.e., 
+power). This is closely related to a sensitivity analysis. However, 
+whereas the latter is used to identify the (range of) effect size(s) for
+ which a test with the given sample size has a certain amount of power, 
+the former calculates the power that the test has for a given 
+(theoretically motivated) effect size and sample size. Therefore, to 
+avoid confusion, I recommend the author use the term “retrospective 
+power analysis” (Zumbo &amp; Hubley, 1998) instead.</p>
+</li>
+<li>
+<p>The notation of standardized mean differences (Cohens d/delta) is 
+somewhat inconsistent. Typically, delta refers to a true/population 
+effect size, whereas d refers to an observed/estimated effect size. On 
+p. 12, for example, d is used for both true values and observed values, 
+but in Figure 5 delta is used (where d should be used instead). I think 
+it is important and helpful to differentiate between these two levels, 
+so I recommend the author use delta for true values and d for observed 
+or critical values.</p>
+</li>
+<li>
+<p>On p. 7, the author mentions the Bonferroni correction when 
+researchers might reject a single hypothesis based on at least one 
+significant result in multiple tests. Another common situation which is 
+often overlooked is when researchers might retain a single hypothesis 
+based on at least one non-significant outcome in multiple tests (e.g., a
+ series of replications). In such a case, the overall Type I error might
+ in fact be much smaller than the desired one. This situation is 
+discussed in Francis and Thunell (2021) who suggest a “reverse 
+Bonferroni correction”, where the alpha for each individual test is 
+increased to achieve the desired overall Type I error. I think this 
+scenario and the reverse Bonferroni correction should be mentioned here.</p>
+</li>
+</ol>
+<p>References:<br>
+Cohen, J. <em>Statistical power analysis for the behavioral sciences (2nd ed.)</em>. Hillsdale: Erlbaum.<br>
+Francis, G., &amp; Thunell, E. (2021). Reversing Bonferroni. <em>Psychonomic Bulletin &amp; Review.</em><br>
+Zumbo, B. D., &amp; Hubley, A. M. (1998). A note on misconceptions concerning prospective and retrospective power. <em>The Statistician, 47</em>, 385—388.</p>
+</div>
+</scholastica-markdown>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <!----><div class="section rating-scale-questions">
+    <div class="review-header">
+      <h5 class="major-review-section">Rating scale questions</h5>
+    </div>
+    <!----><div class="table-wrapper">
+      <table>
+        <thead>
+          <th></th>
+          <th>Strongly Disagree</th>
+          <th>Disagree</th>
+          <th>Neutral</th>
+          <th>Agree</th>
+          <th>Strongly Agree</th>
+        </thead>
+        <tbody>
+          <!----><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+construct validity (good measures and/or manipulations of the constructs
+ the authors wish to study). (Choose “Neutral” if this is not an 
+empirical manuscript)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+statistical validity (appropriate statistical tests, assumptions are 
+clear and reasonable, no statistical errors, appropriate statistical 
+inferences, etc.). (Choose “Neutral” if this is not an empirical 
+manuscript)
+</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+internal validity (any causal claims or implications are well-justified,
+ alternative explanations are thoroughly considered, etc.). (Choose 
+“Neutral” if this is not an empirical manuscript, or no causal claims 
+are made or even vaguely implied.)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr><tr>
+            <td>
+              <span>The study/studies in this manuscript have strong 
+external validity (authors appropriately constrain their conclusions 
+based on the limits of the generalizability of their findings to other 
+contexts (including from lab to real world), other populations, other 
+stimuli or measures, etc.)</span><br>
+              <!---->
+              <!---->
+            </td>
+            <td></td>
+            <td></td>
+            <td>✔</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  
+  <!---->
+  
+</div>
+</app-review>
+      </div>
+    </div>
+  </div>
+</div>
+
+</decision-reviews>
+  </div>
+
+  <div class="large-2 columns hide-for-small hide-for-medium">
+    <div stick="" style="width: 175px; position: fixed; top: 10px;">
+      <div class="jump-to-section">
+        Jump to section
+      </div>
+      <div class="panel navigation-panel">
+        <ul id="jump-nav">
+          <li style="opacity: 0.5;">
+            <i class="fi-stop"></i>
+            <a elementid="determination" hi="" href="#determination" id="determination-lnk">
+              Board's determination
+            </a>
+          </li>
+          <li style="opacity: 0.5;">
+            <i class="fi-stop"></i>
+            <a elementid="editor-comments" hi="" href="#editor-comments" id="editor-comments-lnk">
+              Editor's comments
+            </a>
+          </li>
+          <!----><!---->
+            <li style="opacity: 0.5;">
+              <i class="fi-stop"></i>
+              <a hi="" href="#reviewer_1" id="reviewer_1-lnk">
+                Reviewer 1
+              </a>
+            </li>
+          <!---->
+            <li style="opacity: 0.5;">
+              <i class="fi-stop"></i>
+              <a hi="" href="#reviewer_2" id="reviewer_2-lnk">
+                Reviewer 2
+              </a>
+            </li>
+          <!---->
+            <li style="opacity: 1;">
+              <i class="fi-stop"></i>
+              <a hi="" href="#reviewer_3" id="reviewer_3-lnk">
+                Reviewer 3
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+    <help-widget></help-widget>
+  </app><script src="Scholastica_files/vendor_002.js" type="application/javascript"></script><script defer="true" src="Scholastica_files/bundle.js" type="application/javascript"></script><link rel="stylesheet" media="screen" href="Scholastica_files/site_wide_notification-53f4d852d683536b73fd160fd4985e8eebdfd.css"><script src="Scholastica_files/site_wide_notification-0203690cf81d37e325588337085d6c83912e85.js"></script><div id="beacon-container"><div class="hsds-beacon"><div class="Beacon"><div class="sc-AxheI gkgGqG"></div><div class="sc-AxhCb cszqFf BeaconContainer is-configDisplayRight" data-css-with-delay="false"></div><div class="sc-fznyAO ktNSqr BeaconFabButtonFrame" style="border-radius: 55px; height: 55px; position: fixed; transform: scale(1); width: 106px; z-index: 1049;"><iframe aria-label="Toggle Customer Support" id="" data-cy="FrameComponent"></iframe></div><span></span><span></span></div></div></div></body></html>
